@@ -3,23 +3,34 @@ GEM
   specs:
     awesome_bot (1.18.0)
       parallel (= 1.12.0)
-    kramdown (1.17.0)
-    mdl (0.5.0)
-      kramdown (~> 1.12, >= 1.12.0)
-      mixlib-cli (~> 1.7, >= 1.7.0)
-      mixlib-config (~> 2.2, >= 2.2.1)
-    mixlib-cli (1.7.0)
-    mixlib-config (2.2.13)
+    chef-utils (18.1.29)
+      concurrent-ruby
+    concurrent-ruby (1.2.2)
+    kramdown (2.4.0)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    mdl (0.12.0)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
+      mixlib-cli (~> 2.1, >= 2.1.1)
+      mixlib-config (>= 2.2.1, < 4)
+      mixlib-shellout
+    mixlib-cli (2.1.8)
+    mixlib-config (3.0.27)
       tomlrb
+    mixlib-shellout (3.2.7)
+      chef-utils
     parallel (1.12.0)
-    tomlrb (1.2.7)
+    rexml (3.2.5)
+    tomlrb (2.0.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   awesome_bot
-  mdl
+  mdl (>= 0.7.0)
 
 BUNDLED WITH
-   2.3.6
+   2.1.4
